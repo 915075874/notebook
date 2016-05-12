@@ -1,0 +1,41 @@
+1、安装sass
+	sass依赖于ruby环境，所以先安装ruby
+	
+	安装ruby，下载安装包进行安装  ruby -v 查看版本  说明成功安装
+	
+	开始安装sass：
+		
+		打开终端  输入命令：通过Gem安装Compass+Sass
+			
+			gem install compass   /* 安装compass */
+
+			compass -v       /* compass 成功安装 */
+
+			gem install sass    由于网络会出问题
+		
+			gem sources --remove https://rubygems.org//*删除默认源 */
+
+			gem sources --add https://ruby.taobao.org/ /* 用淘宝源 */
+			
+			gem sources -l          /* 查看淘宝源是否成功 */
+
+			gem install sass       /* 安装sass */
+
+			sass -v         /* sass 成功安装 */
+
+	compas的使用方法：
+		
+		compass create myproject    /* 创建项目的文件夹 */ 
+		
+			里面会  自动生成目录  并且   自带 config.rb
+
+		compass watch              /*  时时监控  */
+
+		
+2、配置sass
+	
+	--no-cache --update $FileName$:../css/$FileNameWithoutExtension$.css
+	
+	/* 生成在 项目根目录下的 css文件夹下 */
+	
+	
